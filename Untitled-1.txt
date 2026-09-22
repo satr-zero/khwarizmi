@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><script src="https://www.googletagmanager.com/gtm.js?id=GTM-MX6DBN9" async="async"></script><script src="/static/hash-fg97iip1/js/gtm.js" async="async"></script><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="twitter:card" content="summary"/><meta name="twitter:site" content="@dart_lang"/><meta name="twitter:description" content="A WebView2-powered webview for Flutter on Windows with seamless composition, keyboard focus integration, and a typed event API."/><meta name="twitter:image" content="https://pub.dev/static/hash-fg97iip1/img/pub-dev-icon-cover-image.png"/><meta property="og:type" content="website"/><meta property="og:site_name" content="Dart packages"/><meta property="og:title" content="webview_flutter_windows | Flutter package"/><meta property="og:description" content="A WebView2-powered webview for Flutter on Windows with seamless composition, keyboard focus integration, and a typed event API."/><meta property="og:image" content="https://pub.dev/static/hash-fg97iip1/img/pub-dev-icon-cover-image.png"/><meta property="og:url" content="https://pub.dev/packages/webview_flutter_windows"/><title>webview_flutter_windows | Flutter package</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&amp;family=Google+Sans+Display:wght@400&amp;family=Google+Sans+Text:wght@400;500;700&amp;family=Google+Sans+Mono:wght@400;700&amp;display=swap"/><link rel="shortcut icon" href="/static/hash-fg97iip1/img/flutter-logo-32x32.png"/><meta rel="apple-touch-icon" href="/static/hash-fg97iip1/img/flutter-logo-32x32.png"/><meta rel="apple-touch-icon-precomposed" href="/static/hash-fg97iip1/img/flutter-logo-32x32.png"/><link rel="stylesheet" href="https://www.gstatic.com/glue/v25_0/ccb.min.css"/><link rel="search" type="application/opensearchdescription+xml" title="Dart packages" href="/osd.xml"/><link rel="canonical" href="https://pub.dev/packages/webview_flutter_windows"/><meta name="description" content="A WebView2-powered webview for Flutter on Windows with seamless composition, keyboard focus integration, and a typed event API."/><link rel="alternate" type="application/atom+xml" title="Recently published packages on pub.dev" href="/feed.atom"/><link rel="alternate" type="application/atom+xml" title="Recently published versions of package webview_flutter_windows on pub.dev" href="/api/packages/webview_flutter_windows/feed.atom"/><link rel="stylesheet" type="text/css" href="/static/hash-fg97iip1/css/style.css"/><script src="/static/hash-fg97iip1/js/script.dart.js" defer="defer"></script><script src="https://www.gstatic.com/brandstudio/kato/cookie_choice_component/cookie_consent_bar.v3.js" defer="defer" data-autoload-cookie-consent-bar="true"></script><meta name="pub-page-data" content="eyJwa2dEYXRhIjp7InBhY2thZ2UiOiJ3ZWJ2aWV3X2ZsdXR0ZXJfd2luZG93cyIsInZlcnNpb24iOiIxLjIuMCIsInB1Ymxpc2hlcklkIjoidG9tYXJzLnRlY2giLCJpc0Rpc2NvbnRpbnVlZCI6ZmFsc2UsImlzTGF0ZXN0Ijp0cnVlfSwic2Vzc2lvbkF3YXJlIjpmYWxzZX0="/><link rel="preload" href="/static/hash-fg97iip1/highlight/highlight-with-init.js" as="script"/></head><body class="light-theme"><script src="/static/hash-fg97iip1/js/dark-init.js"></script><noscript><iframe class="-gtm-iframe" src="https://www.googletagmanager.com/ns.html?id=GTM-MX6DBN9" height="0" width="0"></iframe></noscript><div class="site-header pub-dark-bg"><button class="hamburger" aria-label="menu toggle"></button><a class="logo" href="/" aria-label="Go to the landing page of pub.dev"><img class="site-logo" src="/static/hash-fg97iip1/img/pub-dev-logo.svg" alt="" width="140" height="30" role="presentation"/></a><div class="site-header-space"></div><div class="site-header-mask"></div><div class="site-header-search"><form action="/packages" method="GET"><input class="site-header-search-input" name="q" placeholder="New search..." autocomplete="on" title="Search"/></form></div><nav class="site-header-nav scroll-container"><div class="nav-login-container"><button id="-account-login" class="nav-main-button link">Sign in</button></div><div class="nav-container nav-help-container hoverable"><button class="nav-main-button">Help</button><div class="nav-hover-popup"><div class="nav-table-columns"><div class="nav-table-column"><h3>pub.dev</h3><a class="nav-link" href="/help/search" rel="noopener" target="_blank">Searching for packages</a><a class="nav-link" href="/help/scoring" rel="noopener" target="_blank">Package scoring and pub points</a></div><div class="nav-table-column"><h3>Flutter</h3><a class="nav-link" href="https://flutter.dev/using-packages/" rel="noopener" target="_blank">Using packages</a><a class="nav-link" href="https://flutter.dev/developing-packages/" rel="noopener" target="_blank">Developing packages and plugins</a><a class="nav-link" href="https://dart.dev/tools/pub/publishing" rel="noopener" target="_blank">Publishing a package</a></div><div class="nav-table-column"><h3>Dart</h3><a class="nav-link" href="https://dart.dev/guides/packages" rel="noopener" target="_blank">Using packages</a><a class="nav-link" href="https://dart.dev/tools/pub/publishing" rel="noopener" target="_blank">Publishing a package</a></div></div></div></div><div class="nav-container nav-help-container-mobile foldable"><h3 class="foldable-button">pub.dev <img class="foldable-icon" src="/static/hash-fg97iip1/img/nav-mobile-foldable-icon.svg" alt="toggle folding of the section" width="13" height="6"/></h3><div class="foldable-content"><a class="nav-link" href="/help/search" rel="noopener" target="_blank">Searching for packages</a><a class="nav-link" href="/help/scoring" rel="noopener" target="_blank">Package scoring and pub points</a></div></div><div class="nav-container nav-help-container-mobile foldable"><h3 class="foldable-button">Flutter <img class="foldable-icon" src="/static/hash-fg97iip1/img/nav-mobile-foldable-icon.svg" alt="toggle folding of the section" width="13" height="6"/></h3><div class="foldable-content"><a class="nav-link" href="https://flutter.dev/using-packages/" rel="noopener" target="_blank">Using packages</a><a class="nav-link" href="https://flutter.dev/developing-packages/" rel="noopener" target="_blank">Developing packages and plugins</a><a class="nav-link" href="https://dart.dev/tools/pub/publishing" rel="noopener" target="_blank">Publishing a package</a></div></div><div class="nav-container nav-help-container-mobile foldable"><h3 class="foldable-button">Dart <img class="foldable-icon" src="/static/hash-fg97iip1/img/nav-mobile-foldable-icon.svg" alt="toggle folding of the section" width="13" height="6"/></h3><div class="foldable-content"><a class="nav-link" href="https://dart.dev/guides/packages" rel="noopener" target="_blank">Using packages</a><a class="nav-link" href="https://dart.dev/tools/pub/publishing" rel="noopener" target="_blank">Publishing a package</a></div></div></nav><button class="-pub-theme-toggle" aria-label="light/dark theme toggle"></button></div><div id="banner-container"></div><main class="container"><div class="detail-wrapper -active -has-info-box"><div class="detail-header -is-loose"><div class="detail-container"><div class="detail-header-outer-block"><div class="detail-header-content-block"><h1 class="title pub-monochrome-icon-hoverable">webview_flutter_windows 1.2.0 <span class="pkg-page-title-copy"><img class="pub-monochrome-icon pkg-page-title-copy-icon filter-invert-on-dark" src="/static/hash-fg97iip1/img/content-copy-icon.svg" alt="copy &quot;webview_flutter_windows: ^1.2.0&quot; to clipboard" width="18" height="18" title="Copy &quot;webview_flutter_windows: ^1.2.0&quot; to clipboard" data-copy-content="webview_flutter_windows: ^1.2.0" data-ga-click-event="copy-package-version"/><div class="pkg-page-title-copy-feedback"><span class="code">webview_flutter_windows: ^1.2.0</span> copied to clipboard</div></span></h1><div class="metadata">Published <span><a class="-x-ago" href="" title="Sep 1, 2026" role="button" data-timestamp="1788300384553">7 days ago</a></span> • <a class="-pub-publisher" href="/publishers/tomars.tech"><img class="-pub-publisher-shield filter-invert-on-dark" src="/static/hash-fg97iip1/img/material-icon-verified.svg" alt="verified publisher" width="14" height="14" title="Published by a pub.dev verified publisher"/>tomars.tech</a></div><div class="detail-tags-and-like"><div class="detail-tags"><div class="-pub-tag-badge"><span class="tag-badge-main">SDK</span><a class="tag-badge-sub" href="/packages?q=sdk%3Aflutter" rel="nofollow" title="Packages compatible with Flutter SDK">Flutter</a></div><div class="-pub-tag-badge"><span class="tag-badge-main">Platform</span><a class="tag-badge-sub" href="/packages?q=platform%3Awindows" rel="nofollow" title="Packages compatible with Windows platform">Windows</a></div></div><div class="like-button-and-label"><button class="like-button-and-label--button -pub-icon-button" data-ga-click-event="toggle-like" aria-pressed="false" data-package="webview_flutter_windows" data-value="2" title="Like this package"><img class="-pub-icon-button-icon--on" src="/static/hash-fg97iip1/img/like-active.svg" alt="liked status: active" width="18" height="18"/><img class="-pub-icon-button-icon--off" src="/static/hash-fg97iip1/img/like-inactive.svg" alt="liked status: inactive" width="18" height="18"/></button><span class="like-button-and-label--count-wrapper"><span class="like-button-and-label--count">2</span></span></div></div></div></div></div></div><div class="detail-container"><div class="detail-lead"><div class="detail-metadata-toggle"><div class="detail-metadata-toggle-icon">→</div><h3 class="detail-lead-title">Metadata</h3></div><p class="detail-lead-text">A WebView2-powered webview for Flutter on Windows with seamless composition, keyboard focus integration, and a typed event API.</p><p class="detail-lead-more"><a class="detail-metadata-toggle">More...</a></p></div></div><div class="detail-body"><div class="detail-tabs"><div class="detail-tabs-wide-header"><div class="detail-container"><ul class="detail-tabs-header"><li class="detail-tab tab-button detail-tab-readme-title -active">Readme</li><li class="detail-tab tab-link detail-tab-changelog-title"><a href="/packages/webview_flutter_windows/changelog" role="button">Changelog</a></li><li class="detail-tab tab-link detail-tab-example-title"><a href="/packages/webview_flutter_windows/example" role="button">Example</a></li><li class="detail-tab tab-link detail-tab-installing-title"><a href="/packages/webview_flutter_windows/install" role="button">Installing</a></li><li class="detail-tab tab-link detail-tab-versions-title"><a href="/packages/webview_flutter_windows/versions" role="button">Versions</a></li><li class="detail-tab tab-link detail-tab-analysis-title"><a href="/packages/webview_flutter_windows/score" role="button">Scores</a></li></ul></div></div><div class="detail-container detail-body-main"><div class="detail-tabs-content"><section class="tab-content detail-tab-readme-content -active markdown-body"><h1 id="webview_flutter_windows" class="hash-header">webview_flutter_windows <a href="#webview_flutter_windows" class="hash-link">#</a></h1>
+<p><a href="https://pub.dev/packages/webview_flutter_windows"><img src="https://external-images.pub.dev/6LSn7C0YXNuUsDibBHCDTsqQONFVY2f%2F4sreRH0dyr0%3D/1788912000000/https%3A%2F%2Fimg.shields.io%2Fpub%2Fv%2Fwebview_flutter_windows.svg" alt="pub package"></a>
+<a href="https://github.com/omar-hanafy/webview_flutter_windows/actions/workflows/ci.yml" rel="ugc"><img src="https://external-images.pub.dev/HaZYsoVRQljggZ3wGKoljTvMZUBLBKY0mqjBwoc6nsg%3D/1788912000000/https%3A%2F%2Fgithub.com%2Fomar-hanafy%2Fwebview_flutter_windows%2Factions%2Fworkflows%2Fci.yml%2Fbadge.svg" alt="CI"></a></p>
+<p>A WebView for Flutter on Windows, powered by
+<a href="https://learn.microsoft.com/en-us/microsoft-edge/webview2/" rel="ugc">Microsoft Edge WebView2</a>.
+The browser is rendered off-screen and composited into your widget tree as a
+regular Flutter <code>Texture</code>, so it behaves like any other widget: no airspace
+issues, and transforms, opacity, and widgets painted on top all just work.</p>
+<blockquote>
+<p><strong>Fork notice:</strong> this is a maintained fork of
+<a href="https://github.com/jnschulze/flutter-webview-windows" rel="ugc">jnschulze/flutter-webview-windows</a>.
+It is not affiliated with the Flutter team's <code>webview_flutter</code> packages and
+keeps the controller/widget API from <code>webview_windows</code>.
+On top of upstream <code>0.4.0</code> it fixes the
+<a href="https://github.com/jnschulze/flutter-webview-windows/issues/230" rel="ugc">window focus loss issue (#230)</a>,
+hardens the native COM and channel layers, modernizes the toolchain
+(WebView2 SDK <code>1.0.3967.48</code>, WIL <code>1.0.260126.7</code>, C++23), and ships a real
+test suite. Coming from upstream? Read the
+<a href="https://github.com/omar-hanafy/webview_flutter_windows/blob/main/migration_guide.md" rel="ugc">migration guide</a>.</p>
+</blockquote>
+<p><img src="https://external-images.pub.dev/O0oui2IR%2Fh0sNyFcmdjS3G%2BtPXQQ3d4ci9NOVp%2FQW%2FM%3D/1788912000000/https%3A%2F%2Fuser-images.githubusercontent.com%2F720469%2F116823636-d8b9fe00-ab85-11eb-9f91-b7bc819615ed.png" alt="Example app"></p>
+<h2 id="ai-coding-assistant-support" class="hash-header">AI coding-assistant support <a href="#ai-coding-assistant-support" class="hash-link">#</a></h2>
+<p>This repository ships an <strong>agent plugin</strong> for
+<a href="https://code.claude.com/docs/en/discover-plugins" rel="ugc">Claude Code</a> and
+<a href="https://learn.chatgpt.com/codex" rel="ugc">OpenAI Codex</a> with five package-specific
+skills: integrating a webview, the Dart/JavaScript bridge and local content,
+troubleshooting, writing channel-mocked tests, and migrating from
+<code>webview_windows</code> 0.x. This is tooling for coding agents, not a runtime
+feature of the Dart package, and it installs from this repository (it is not
+part of the pub.dev archive).</p>
+<p>Claude Code (CLI and desktop app) - inside a session:</p>
+<pre><code class="language-text">/plugin marketplace add omar-hanafy/webview_flutter_windows
+/plugin install webview-flutter-windows@webview-flutter-windows
+</code></pre>
+<p>then run <code>/reload-plugins</code> (or start a new session).</p>
+<p>OpenAI Codex (CLI; installed plugins also surface in the ChatGPT desktop
+app, not the IDE extension) - from a terminal:</p>
+<pre><code class="language-sh">codex plugin marketplace add omar-hanafy/webview_flutter_windows
+codex plugin add webview-flutter-windows@webview-flutter-windows
+</code></pre>
+<p>then start a new Codex session.</p>
+<p>Example prompts: "Migrate this app from webview_windows to
+webview_flutter_windows" or "The webview is blank and typing goes to the
+wrong place, debug it". Skills also work explicitly:
+<code>/webview-flutter-windows:integrate-webview-windows</code> in Claude Code,
+<code>$integrate-webview-windows</code> in Codex.</p>
+<p>The plugin is instructions-only: skills and reference files, no hooks, no
+MCP servers, no executables, no network access. Its version tracks the
+package release it shipped with, and the skills document the 1.x API
+(<code>setDefaultContextMenusEnabled</code> needs <code>&gt;=1.1.0</code>). Full skill list,
+updating, uninstalling, validation, and maintainer notes:
+<a href="https://github.com/omar-hanafy/webview_flutter_windows/blob/main/docs/agent-plugin.md" rel="ugc">docs/agent-plugin.md</a>.</p>
+<h2 id="features" class="hash-header">Features <a href="#features" class="hash-link">#</a></h2>
+<ul>
+<li><strong>Seamless composition.</strong> Web content renders into a Flutter <code>Texture</code>
+inside your widget tree, not a native window floating above it.</li>
+<li><strong>Keyboard focus that works.</strong> Clicking the webview does not deactivate
+your window, clicking back on Flutter UI restores Flutter's keyboard
+handling instantly, and <code>Tab</code> traversal leaves the page cleanly.</li>
+<li><strong>Typed broadcast event streams</strong> for URL, loading state, document title,
+navigation history, security state, full-screen elements, downloads, load
+errors, web messages, and native focus.</li>
+<li><strong>Two-way JavaScript bridge</strong>: execute scripts, register
+on-document-created scripts, and exchange JSON messages with the page.</li>
+<li><strong>Browser control</strong>: full cookie management (read, write, delete), cache,
+user agent, zoom, background color, default context menus, popup policy,
+virtual host mapping, suspend/resume, FPS limiting, and DevTools.</li>
+<li><strong>Headless mode</strong>: drive a controller without a widget for background
+pages, scraping, or pre-warming.</li>
+<li><strong>Faithful input forwarding</strong>: mouse, high-precision trackpad scrolling,
+and multi-touch.</li>
+<li><strong>High-DPI aware</strong>, including per-view scale factors in multi-window apps.</li>
+</ul>
+<h2 id="requirements" class="hash-header">Requirements <a href="#requirements" class="hash-link">#</a></h2>
+<p><strong>On your users' machines</strong></p>
+<ul>
+<li>Windows 10 1809 or newer (the off-screen compositor relies on
+<code>Windows.Graphics.Capture</code>).</li>
+<li>The <a href="https://developer.microsoft.com/en-us/microsoft-edge/webview2/" rel="ugc">WebView2 Runtime</a>.
+It ships with Windows 11 and current Windows 10. To verify at startup, call
+<code>WebviewController.getWebViewVersion()</code>: if it returns <code>null</code>, guide the
+user to install the runtime.</li>
+</ul>
+<p><strong>On your development machine</strong></p>
+<ul>
+<li>Flutter 3.44+ / Dart 3.12+</li>
+<li>Visual Studio 2022 with the <em>Desktop development with C++</em> workload</li>
+<li>A Windows 10/11 SDK (installed with the workload by default)</li>
+<li>Optional: <code>nuget.exe</code> in your <code>PATH</code> (the build downloads it automatically
+if missing)</li>
+</ul>
+<h2 id="installation" class="hash-header">Installation <a href="#installation" class="hash-link">#</a></h2>
+<pre><code class="language-sh">flutter pub add webview_flutter_windows
+</code></pre>
+<p>To track unreleased changes, depend on the repository instead:</p>
+<pre><code class="language-yaml">dependencies:
+  webview_flutter_windows:
+    git:
+      url: https://github.com/omar-hanafy/webview_flutter_windows.git
+      ref: main
+</code></pre>
+<h2 id="quick-start" class="hash-header">Quick start <a href="#quick-start" class="hash-link">#</a></h2>
+<p>Create a <code>WebviewController</code>, initialize it, and hand it to a <code>Webview</code>
+widget:</p>
+<pre><code class="language-dart">import 'package:flutter/material.dart';
+import 'package:webview_flutter_windows/webview_flutter_windows.dart';
+
+class BrowserPane extends StatefulWidget {
+  const BrowserPane({super.key});
+
+  @override
+  State&lt;BrowserPane&gt; createState() =&gt; _BrowserPaneState();
+}
+
+class _BrowserPaneState extends State&lt;BrowserPane&gt; {
+  final _controller = WebviewController();
+
+  @override
+  void initState() {
+    super.initState();
+    _initWebview();
+  }
+
+  Future&lt;void&gt; _initWebview() async {
+    await _controller.initialize();
+    await _controller.setPopupWindowPolicy(WebviewPopupWindowPolicy.deny);
+    await _controller.setDefaultContextMenusEnabled(true);
+    await _controller.loadUrl('https://flutter.dev');
+    if (mounted) {
+      setState(() {});
+    }
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return _controller.value.isInitialized
+        ? Webview(_controller)
+        : const Center(child: CircularProgressIndicator());
+  }
+}
+</code></pre>
+<p><code>initialize()</code> completes with an error if the WebView2 Runtime is missing
+(error code <code>environment_creation_failed</code>), so wrap it in a <code>try</code>/<code>catch</code> if
+you want to show a friendly install prompt.</p>
+<p>WebView2's default context menus are disabled by this package. Opt in before
+starting the navigation that should use them, as shown above. A page may still
+suppress its menu, and WebView2 applies a setting changed after navigation
+starts to the next top-level navigation.</p>
+<h2 id="listening-to-events" class="hash-header">Listening to events <a href="#listening-to-events" class="hash-link">#</a></h2>
+<p>All controller streams are broadcast streams: attach as many listeners as you
+like, but subscribe <em>before</em> triggering navigation, because events emitted
+while nobody listens are dropped.</p>
+<pre><code class="language-dart">controller.url.listen((url) =&gt; debugPrint('URL: $url'));
+controller.loadingState.listen((state) =&gt; debugPrint('State: $state'));
+controller.title.listen((title) =&gt; debugPrint('Title: $title'));
+controller.historyChanged.listen((h) =&gt; debugPrint('canGoBack: ${h.canGoBack}'));
+controller.onLoadError.listen((status) =&gt; debugPrint('Load error: $status'));
+controller.onDownloadEvent.listen((e) =&gt; debugPrint('${e.kind}: ${e.url}'));
+</code></pre>
+<h2 id="talking-to-the-page" class="hash-header">Talking to the page <a href="#talking-to-the-page" class="hash-link">#</a></h2>
+<p>Execute JavaScript and get its (JSON-decoded) result, or inject scripts that
+run before any page script:</p>
+<pre><code class="language-dart">final title = await controller.executeScript('document.title');
+
+final scriptId = await controller.addScriptToExecuteOnDocumentCreated(
+  'window.myAppReady = true;',
+);
+</code></pre>
+<p>Exchange structured messages with the page:</p>
+<pre><code class="language-dart">// Dart -&gt; page
+await controller.postWebMessage('{"command": "ping"}');
+
+// page -&gt; Dart
+controller.webMessage.listen((message) {
+  debugPrint('Page says: $message'); // already JSON-decoded
+});
+</code></pre>
+<p>And on the JavaScript side:</p>
+<pre><code class="language-js">window.chrome.webview.addEventListener('message', (e) =&gt; {
+  console.log(e.data); // {command: 'ping'}
+});
+window.chrome.webview.postMessage({command: 'pong'});
+</code></pre>
+<h2 id="cookies" class="hash-header">Cookies <a href="#cookies" class="hash-link">#</a></h2>
+<p>Read, write, and delete cookies through the WebView2 cookie store - useful
+for extracting a session token after a login flow or seeding one before it:</p>
+<pre><code class="language-dart">final cookies = await controller.getCookies('https://example.com');
+final session = cookies.firstWhere((c) =&gt; c.name == 'session');
+
+await controller.setCookie(WebviewCookie(
+  name: 'theme',
+  value: 'dark',
+  domain: '.example.com',
+  expires: DateTime.now().add(const Duration(days: 30)),
+  isSecure: true,
+  sameSite: WebviewCookieSameSite.strict,
+));
+
+await controller.deleteCookies('theme', uri: 'https://example.com');
+await controller.clearCookies(); // everything
+</code></pre>
+<p>Omit <code>expires</code> to create a session cookie; pass an empty <code>uri</code> to
+<code>getCookies</code> to list every cookie of the profile.</p>
+<h2 id="headless-usage" class="hash-header">Headless usage <a href="#headless-usage" class="hash-link">#</a></h2>
+<p>A controller works without a <code>Webview</code> widget: initialize it, give the
+invisible page real bounds with <code>setSize</code> (pages do not perform layout until
+they have nonzero bounds), and drive it through the normal API - load pages,
+run scripts, exchange messages, read cookies. Nothing is rendered and no
+frames are captured:</p>
+<pre><code class="language-dart">final background = WebviewController();
+await background.initialize();
+await background.setSize(const Size(1280, 720));
+await background.loadUrl('https://example.com/login');
+// ... executeScript, webMessage, getCookies ...
+await background.dispose();
+</code></pre>
+<h2 id="permission-requests" class="hash-header">Permission requests <a href="#permission-requests" class="hash-link">#</a></h2>
+<p>Web content can request browser permissions (camera, microphone, geolocation,
+clipboard, notifications). Decide per request via the <code>Webview</code> widget:</p>
+<pre><code class="language-dart">Webview(
+  controller,
+  permissionRequested: (url, kind, isUserInitiated) async {
+    final allowed = await askTheUser(url, kind);
+    return allowed
+        ? WebviewPermissionDecision.allow
+        : WebviewPermissionDecision.deny;
+  },
+)
+</code></pre>
+<p>Return <code>WebviewPermissionDecision.none</code> to defer to the WebView2 default.</p>
+<h2 id="keyboard-focus" class="hash-header">Keyboard focus <a href="#keyboard-focus" class="hash-link">#</a></h2>
+<p>Clicking into the webview gives the page real Win32 keyboard focus; clicking
+any Flutter widget hands focus back automatically. On top of that, one
+invariant is enforced in both directions: <strong>while a Flutter text input owns
+Flutter focus, no webview keeps native keyboard focus.</strong> If a dialog's
+<code>TextField</code> gains focus while the page has the keyboard, focus is handed
+back; if anything - <code>focus()</code>, page script, a stale refocus path in app
+code - grabs native focus while a text input is focused, the grab is
+reverted immediately. Typing can never silently land in the page. To move
+focus into the page programmatically, unfocus the text input first. You
+normally do not have to manage any of this. For programmatic control:</p>
+<pre><code class="language-dart">await controller.focus();               // move keyboard focus into the page
+await WebviewController.releaseFocus(); // hand it back to Flutter
+
+controller.onFocusChanged.listen((focused) =&gt; debugPrint('Page focus: $focused'));
+final focused = controller.hasNativeFocus;
+</code></pre>
+<h2 id="configuring-the-browser-environment" class="hash-header">Configuring the browser environment <a href="#configuring-the-browser-environment" class="hash-link">#</a></h2>
+<p>The WebView2 environment is shared by all controllers and is created lazily
+on the first <code>initialize()</code>. To customize it (user data directory, browser
+executable, Chromium command line flags), configure it once <em>before</em> creating
+any controller:</p>
+<pre><code class="language-dart">await WebviewController.initializeEnvironment(
+  userDataPath: r'C:\path\to\profile',
+  additionalArguments: '--show-fps-counter',
+);
+</code></pre>
+<p>The environment's lifecycle is reference counted: it is released when the
+last controller is disposed. That means <code>initializeEnvironment</code> can be
+called again - for example with a different <code>userDataPath</code> - once all
+controllers are gone; it only throws a <code>PlatformException</code> while controllers
+are alive.</p>
+<h2 id="example-app-and-tests" class="hash-header">Example app and tests <a href="#example-app-and-tests" class="hash-link">#</a></h2>
+<p>A complete example (URL bar, loading indicator, DevTools, permission prompts)
+lives in <a href="https://github.com/omar-hanafy/webview_flutter_windows/blob/main/example" rel="ugc"><code>example/</code></a>: <code>cd example &amp;&amp; flutter run -d windows</code>.</p>
+<p>The repository also ships:</p>
+<ul>
+<li>
+<p>a Dart test suite (<code>flutter test</code>) covering the channel contract of every
+controller method, the controller lifecycle, all events, and input/focus
+forwarding,</p>
+</li>
+<li>
+<p>native C++ unit tests (GoogleTest), run from the repository root:</p>
+<pre><code class="language-sh">cmake -S windows/test -B build/native_tests
+cmake --build build/native_tests --config Release
+ctest --test-dir build/native_tests -C Release --output-on-failure
+</code></pre>
+</li>
+<li>
+<p>a real-input integration test for the focus behavior
+(<code>example/integration_test/focus_test.dart</code>), which needs an interactive
+Windows session.</p>
+</li>
+</ul>
+<p>Tip for your own widget tests: when driving a <code>WebviewController</code> under
+<code>testWidgets</code>, wrap <code>initialize()</code> and <code>dispose()</code> in <code>tester.runAsync(...)</code>.
+Test bodies run in a fake-async zone where platform channel futures are not
+driven, so awaiting them directly hangs the test.</p>
+<h2 id="limitations" class="hash-header">Limitations <a href="#limitations" class="hash-link">#</a></h2>
+<p>WebView2 has no official off-screen rendering API yet
+(<a href="https://github.com/MicrosoftEdge/WebView2Feedback/issues/20" rel="ugc">WebView2Feedback#20</a>,
+<a href="https://github.com/MicrosoftEdge/WebView2Feedback/issues/526" rel="ugc">#526</a>,
+<a href="https://github.com/MicrosoftEdge/WebView2Feedback/issues/547" rel="ugc">#547</a>).
+This plugin obtains frames through <code>Windows.Graphics.Capture</code>, which is why
+Windows versions older than Windows 10 1809 are not supported.</p>
+<h2 id="troubleshooting" class="hash-header">Troubleshooting <a href="#troubleshooting" class="hash-link">#</a></h2>
+<ul>
+<li><strong><code>initialize()</code> fails with <code>environment_creation_failed</code></strong>: the WebView2
+Runtime is missing. Check <code>WebviewController.getWebViewVersion()</code> and point
+the user to the <a href="https://developer.microsoft.com/en-us/microsoft-edge/webview2/" rel="ugc">runtime installer</a>.</li>
+<li><strong>The build cannot download NuGet</strong>: install
+<a href="https://www.nuget.org/downloads" rel="ugc">nuget.exe</a> manually and add it to <code>PATH</code>.</li>
+<li><strong>Keyboard input stays in the page after clicking it</strong>: that is by design;
+click any Flutter widget or call <code>WebviewController.releaseFocus()</code> to
+return focus to Flutter.</li>
+</ul>
+<h2 id="migrating-from-upstream-04x" class="hash-header">Migrating from upstream 0.4.x <a href="#migrating-from-upstream-04x" class="hash-link">#</a></h2>
+<p>Version 1.0.0 contains breaking changes (SDK floors, broadcast streams,
+<code>WebErrorStatus</code> renames, stricter lifecycle errors). The
+<a href="https://github.com/omar-hanafy/webview_flutter_windows/blob/main/migration_guide.md" rel="ugc">migration guide</a>
+walks through every one of them, including the focus workarounds you can now
+delete.</p>
+<h2 id="contributing-and-support" class="hash-header">Contributing and support <a href="#contributing-and-support" class="hash-link">#</a></h2>
+<p>Contributions are welcome. Read the <a href="https://github.com/omar-hanafy/webview_flutter_windows/blob/main/.github/CONTRIBUTING.md" rel="ugc">contribution guide</a>
+before opening a pull request. Use the repository's structured issue forms for
+bugs, feature requests, documentation improvements, and usage questions.</p>
+<p>See <a href="https://github.com/omar-hanafy/webview_flutter_windows/blob/main/.github/SUPPORT.md" rel="ugc">Support</a> for help channels,
+<a href="https://github.com/omar-hanafy/webview_flutter_windows/blob/main/.github/SECURITY.md" rel="ugc">Security</a> for private vulnerability reporting, and the
+<a href="https://github.com/omar-hanafy/webview_flutter_windows/blob/main/.github/CODE_OF_CONDUCT.md" rel="ugc">Code of Conduct</a> for community expectations.</p>
+<h2 id="credits-and-license" class="hash-header">Credits and license <a href="#credits-and-license" class="hash-link">#</a></h2>
+<p>Created by <a href="https://github.com/jnschulze" rel="ugc">Niklas Schulze (jnschulze)</a>; this
+fork is maintained by <a href="https://github.com/omar-hanafy" rel="ugc">Omar Hanafy</a>.
+Licensed under the <a href="https://github.com/omar-hanafy/webview_flutter_windows/blob/main/LICENSE" rel="ugc">BSD 3-Clause License</a>.</p>
+</section></div></div></div><aside class="detail-info-box"><a class="packages-scores" href="/packages/webview_flutter_windows/score"><div class="packages-score packages-score-like" data-package="webview_flutter_windows"><div class="packages-score-value -has-value"><span class="packages-score-value-number">2</span><span class="packages-score-value-sign"></span></div><div class="packages-score-label">likes</div></div><div class="packages-score packages-score-health"><div class="packages-score-value -has-value"><span class="packages-score-value-number">160</span><span class="packages-score-value-sign"></span></div><div class="packages-score-label">points</div></div><div class="packages-score packages-score-downloads" title="Number of downloads of this package during the past 30 days"><div class="packages-score-value -has-value"><span class="packages-score-value-number">3.5k</span><span class="packages-score-value-sign"></span></div><div class="packages-score-label">downloads</div></div></a><h3 class="title">Documentation</h3><p><a class="link" href="/documentation/webview_flutter_windows/latest/">API reference</a><br/></p><h3 class="title">Publisher</h3><p><a href="/publishers/tomars.tech"><img class="-pub-publisher-shield filter-invert-on-dark" src="/static/hash-fg97iip1/img/material-icon-verified.svg" alt="verified publisher" width="14" height="14" title="Published by a pub.dev verified publisher"/>tomars.tech</a></p><h3 class="title">Weekly Downloads</h3><div id="-weekly-downloads-sparkline" class="weekly-downloads-sparkline" data-widget="weekly-sparkline" data-weekly-sparkline-points="gFubagoEAABNAgAAWAIAAOADAAAoAwAApQEAALEBAADPAAAAuwEAAHgAAAAGAQAAdQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="></div><h3 class="title pkg-infobox-metadata">Metadata</h3><p>A WebView2-powered webview for Flutter on Windows with seamless composition, keyboard focus integration, and a typed event API.</p><p><a class="link" href="https://github.com/omar-hanafy/webview_flutter_windows" rel="ugc">Repository (GitHub)</a><br/><a class="link" href="https://github.com/omar-hanafy/webview_flutter_windows/issues" rel="ugc">View&#47;report issues</a><br/></p><h3 class="title">Topics</h3><p><a class="topics-tag" href="/packages?q=topic%3Awebview" rel="nofollow">#webview</a> <a class="topics-tag" href="/packages?q=topic%3Awebview2" rel="nofollow">#webview2</a> <a class="topics-tag" href="/packages?q=topic%3Awindows" rel="nofollow">#windows</a> <a class="topics-tag" href="/packages?q=topic%3Adesktop" rel="nofollow">#desktop</a> <a class="topics-tag" href="/packages?q=topic%3Abrowser" rel="nofollow">#browser</a></p><h3 class="title">License</h3><p><img class="inline-icon-img filter-invert-on-dark" src="/static/hash-fg97iip1/img/material-icon-balance.svg" alt="" width="14" height="14" role="presentation"/>BSD-3-Clause (<a href="/packages/webview_flutter_windows/license">license</a>)</p><h3 class="title">Dependencies</h3><p><a href="https://api.flutter.dev/">flutter</a></p><h3 class="title">More</h3><p><a href="/packages?q=dependency%3Awebview_flutter_windows" rel="nofollow">Packages that depend on webview_flutter_windows</a><br/><br/><a href="/packages?q=implements-federated-plugin%3Awebview_flutter_windows" rel="nofollow">Packages that implement webview_flutter_windows</a></p></aside></div><script type="application/ld+json">{"@context":"http\u003a\u002f\u002fschema.org","@type":"SoftwareSourceCode","name":"webview\u005fflutter\u005fwindows","version":"1.2.0","description":"webview\u005fflutter\u005fwindows - A WebView2-powered webview for Flutter on Windows with seamless composition, keyboard focus integration, and a typed event API.","url":"https\u003a\u002f\u002fpub.dev\u002fpackages\u002fwebview\u005fflutter\u005fwindows","dateCreated":"2026-06-20T14\u003a38\u003a00.102637Z","dateModified":"2026-09-01T22\u003a06\u003a24.553593Z","programmingLanguage":"Dart","image":"https\u003a\u002f\u002fpub.dev\u002fstatic\u002fimg\u002fpub-dev-icon-cover-image.png","license":"https\u003a\u002f\u002fpub.dev\u002fpackages\u002fwebview\u005fflutter\u005fwindows\u002flicense"}</script></div><div class="detail-metadata"><h3 class="detail-metadata-title"><span class="detail-metadata-toggle">←</span> Metadata</h3><div class="detail-info-box"><a class="packages-scores" href="/packages/webview_flutter_windows/score"><div class="packages-score packages-score-like" data-package="webview_flutter_windows"><div class="packages-score-value -has-value"><span class="packages-score-value-number">2</span><span class="packages-score-value-sign"></span></div><div class="packages-score-label">likes</div></div><div class="packages-score packages-score-health"><div class="packages-score-value -has-value"><span class="packages-score-value-number">160</span><span class="packages-score-value-sign"></span></div><div class="packages-score-label">points</div></div><div class="packages-score packages-score-downloads" title="Number of downloads of this package during the past 30 days"><div class="packages-score-value -has-value"><span class="packages-score-value-number">3.5k</span><span class="packages-score-value-sign"></span></div><div class="packages-score-label">downloads</div></div></a><h3 class="title">Documentation</h3><p><a class="link" href="/documentation/webview_flutter_windows/latest/">API reference</a><br/></p><h3 class="title">Publisher</h3><p><a href="/publishers/tomars.tech"><img class="-pub-publisher-shield filter-invert-on-dark" src="/static/hash-fg97iip1/img/material-icon-verified.svg" alt="verified publisher" width="14" height="14" title="Published by a pub.dev verified publisher"/>tomars.tech</a></p><h3 class="title">Weekly Downloads</h3><div id="-weekly-downloads-sparkline" class="weekly-downloads-sparkline" data-widget="weekly-sparkline" data-weekly-sparkline-points="gFubagoEAABNAgAAWAIAAOADAAAoAwAApQEAALEBAADPAAAAuwEAAHgAAAAGAQAAdQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="></div><h3 class="title pkg-infobox-metadata">Metadata</h3><p>A WebView2-powered webview for Flutter on Windows with seamless composition, keyboard focus integration, and a typed event API.</p><p><a class="link" href="https://github.com/omar-hanafy/webview_flutter_windows" rel="ugc">Repository (GitHub)</a><br/><a class="link" href="https://github.com/omar-hanafy/webview_flutter_windows/issues" rel="ugc">View&#47;report issues</a><br/></p><h3 class="title">Topics</h3><p><a class="topics-tag" href="/packages?q=topic%3Awebview" rel="nofollow">#webview</a> <a class="topics-tag" href="/packages?q=topic%3Awebview2" rel="nofollow">#webview2</a> <a class="topics-tag" href="/packages?q=topic%3Awindows" rel="nofollow">#windows</a> <a class="topics-tag" href="/packages?q=topic%3Adesktop" rel="nofollow">#desktop</a> <a class="topics-tag" href="/packages?q=topic%3Abrowser" rel="nofollow">#browser</a></p><h3 class="title">License</h3><p><img class="inline-icon-img filter-invert-on-dark" src="/static/hash-fg97iip1/img/material-icon-balance.svg" alt="" width="14" height="14" role="presentation"/>BSD-3-Clause (<a href="/packages/webview_flutter_windows/license">license</a>)</p><h3 class="title">Dependencies</h3><p><a href="https://api.flutter.dev/">flutter</a></p><h3 class="title">More</h3><p><a href="/packages?q=dependency%3Awebview_flutter_windows" rel="nofollow">Packages that depend on webview_flutter_windows</a><br/><br/><a href="/packages?q=implements-federated-plugin%3Awebview_flutter_windows" rel="nofollow">Packages that implement webview_flutter_windows</a></p></div><p class="detail-lead-back"><a class="detail-metadata-toggle">Back</a></p></div><div id="-screenshot-carousel" class="carousel"><button id="-carousel-prev" class="pub-fab carousel-prev carousel-nav" title="Previous" data-ga-click-event="screenshot-carousel-prev-click" tabindex="0"><img class="pub-fab-icon" src="/static/hash-fg97iip1/img/keyboard_arrow_left.svg" alt="previous" width="24" height="24" aria-hidden="true"/></button><div id="-image-container" class="image-container"></div><button id="-carousel-next" class="pub-fab carousel-next carousel-nav" title="Next" data-ga-click-event="screenshot-carousel-next-click" tabindex="0"><img class="pub-fab-icon" src="/static/hash-fg97iip1/img/keyboard_arrow_right.svg" alt="next" width="24" height="24" aria-hidden="true"/></button><p id="-screenshot-description" class="screenshot-description"></p></div></main><footer class="site-footer pub-dark-bg"><a class="link" href="https://dart.dev/">Dart language</a><a class="link sep" href="/report?subject=package%3Awebview_flutter_windows&amp;url=https%3A%2F%2Fpub.dev%2Fpackages%2Fwebview_flutter_windows">Report package</a><a class="link sep" href="/policy">Policy</a><a class="link sep" href="https://www.google.com/intl/en/policies/terms/">Terms</a><a class="link sep" href="https://developers.google.com/terms/">API Terms</a><a class="link sep" href="/security">Security</a><a class="link sep" href="https://www.google.com/intl/en/policies/privacy/">Privacy</a><a class="link sep" href="/help">Help</a><a class="link icon sep" href="/feed.atom"><img class="inline-icon" src="/static/hash-fg97iip1/img/rss-feed-icon.svg" alt="RSS" width="20" height="20" title="RSS/atom feed"/></a><a class="link icon github_issue" href="https://github.com/dart-lang/pub-dev/issues/new"><img class="inline-icon" src="/static/hash-fg97iip1/img/bug-report-white-96px.png" alt="bug report" width="20" height="20" title="Report an issue with this site"/></a></footer><script src="/static/hash-fg97iip1/highlight/highlight-with-init.js" defer="defer"></script></body></html>
