@@ -1,0 +1,19 @@
+{
+  "name": "get_mock_weather",
+  "display_name": "الطقس التقديري (Mock Weather)",
+  "description": "جلب حالة الطقس ودرجة الحرارة لمدينة معينة من خدمة الطقس المستقلة",
+  "endpoint": "http://127.0.0.1:5055/execute",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "city": {
+        "type": "string",
+        "description": "اسم المدينة، مثلاً: الرياض، دبي، القاهرة"
+      }
+    },
+    "required": ["city"]
+  },
+  "permissions": ["network"],
+  "version": "1.0.0",
+  "start_command": "python weather_server.py"
+}
